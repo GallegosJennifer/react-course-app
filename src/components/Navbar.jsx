@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurguerButton'
+import Carousel from '../carousel/Carousel'
 
 function Navbar() {
 
@@ -11,6 +12,7 @@ function Navbar() {
   }
   return (
     <>
+    <Carousel/>
       <NavContainer>
         <h2>Navbar test <span>CI</span></h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
